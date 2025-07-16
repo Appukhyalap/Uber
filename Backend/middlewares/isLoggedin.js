@@ -23,7 +23,6 @@ let isLoggedin = async (req , res , next) => {
         const user = await userModel.findOne({_id: decoded._id});
         res.send(user);
         req.user = user;
-
         next();
     } catch(err) {
         return res.status(401).json({ message: "Unauthorized...!" });

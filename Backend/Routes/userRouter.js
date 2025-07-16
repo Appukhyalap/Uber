@@ -17,7 +17,6 @@ router.post("/login"  , [
 
 router.get("/profile" , isLoggedin , userProfile)
 
-
 router.get("/logout" , isLoggedin , userLogout)
 
 

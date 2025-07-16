@@ -71,6 +71,7 @@ let loginUser = async (req, res) => {
 
 let userProfile = async (req, res) => {
   console.log(req.user);
+  res.status(200).json({ user: req.user });
 }
 
 let userLogout = async (req, res) => {
