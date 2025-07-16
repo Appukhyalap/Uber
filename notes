@@ -1,1 +1,2 @@
 express-validator:- it is used t validate the data that is came from the post body
+TTL: means time to leave when you are creating the document on that time  you will set the TTL after this user will delete from the database.. 
